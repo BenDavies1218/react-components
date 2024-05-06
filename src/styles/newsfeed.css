@@ -1,0 +1,30 @@
+:root {
+    --bg:  #242526;
+    --bg-accent: #484a4d;
+    --text-color: #dadce1;
+}
+
+.top-stories {
+    background-color: var(--bg-accent);
+    max-width: 20%;
+    border-right: 5px solid#484a4d;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.top-stories .top-story-heading {
+    text-decoration: underline;
+}
+
+.top-stories .top-story-post {
+    border: 5px solid #242526;
+    margin-top: 20px;
+    padding: 10px;
+    background-color:#dadce1;
+    border-radius: 20px;
+}
+
+.top-stories .link {
+    text-decoration: underline;
+    color: black;
+}
