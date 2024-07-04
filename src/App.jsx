@@ -1,17 +1,18 @@
-import "./index.css";
-import "./styles/newsfeed.css";
-import "./styles/navbar.css";
-import Navbar from "./components/Navbar";
-import NewsPost from "./components/NewsFeed";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import CardPage from "./pages/CardPage";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <section className="main-section">
-        <NewsPost />
-      </section>
-    </>
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<HomePage />} />
+          <Route path="/cards" element={<CardPage />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
